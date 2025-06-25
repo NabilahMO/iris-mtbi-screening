@@ -28,23 +28,8 @@ No mTBI detected
 
 ## Next Features
 
-1. Add simulated ‘mTBI_sample.csv’
-2. Compare variability between control and mTBI cases
-3. Plot time series of normalised distance
-4. Train basic ML classifier to replace threshold rule
+1. Compare variability between control and mTBI cases
+2. Plot time series of normalised distance
+3. Train basic ML classifier to replace threshold rule
 
-##  How to Run It
-
-```bash
-git clone https://github.com/NabilahMO/iris-mtbi-screening.git
-cd iris-mtbi-screening
-python -m venv .venv
-source .venv/bin/activate   # or .\.venv\Scripts\activate on Windows
-pip install -r requirements.txt
-```
-
-Then open the notebook:
-```bash
-notebooks/01-pupil-pipeline.ipynb
-```
 Built by Nabilah Muri-Okunola
