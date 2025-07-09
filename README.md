@@ -15,7 +15,7 @@ Subtle changes in pupil stability can be early signs of concussion. This tool si
 
 1. ``` src ```                  (Custom Python functions (features + data generation))
 2. ``` notebooks```            (Jupyter notebook for full pipeline)
-3. ```data/raw    ```        (Simulated eye-tracking data (control sample))
+3. ```data/raw    ```        (Simulated eye-tracking data (control sample)
 4. ```tests    ```          (Space for test files)
 5. ```requirements.txt  ```   (Python dependencies)
 
@@ -25,11 +25,4 @@ Subtle changes in pupil stability can be early signs of concussion. This tool si
 Standard deviation: 0.0342
 No mTBI detected
 
-
-## Next Features
-
-1. Compare variability between control and mTBI cases
-2. Plot time series of normalised distance
-3. Train basic ML classifier to replace threshold rule
-
-Built by Nabilah Muri-Okunola
+Nabilah Muri-Okunola
