@@ -2,7 +2,7 @@ import csv
 import random
 import os
 
-def generate_fake_landmark_data(num_rows=100, noise_level=0.5, label='control'):
+def generate_fake_landmark_data(num_rows=150, noise_level=0.5, label="mtbi"):
     """Generate and save fake iris landmark data for testing."""
     data = []
     for _ in range(num_rows):
@@ -46,4 +46,8 @@ def generate_fake_landmark_data(num_rows=100, noise_level=0.5, label='control'):
         writer.writerows(data)
 
     print(f"✅ Saved simulated {label} data to 'data/raw/{label}_sample.csv'")
+
+# Generate fake data for both classes
+generate_fake_landmark_data(num_rows=150, noise_level=0.5, label="mtbi")
+generate_fake_landmark_data(num_rows=150, noise_level=0.1, label="control")
     

@@ -1,4 +1,4 @@
-import numpy as np 
+import numpy as np # pyright: ignore[reportMissingImports]
 """ imports NumPy, needed for calculations """
 
 def euclidean_distance(p1, p2):
