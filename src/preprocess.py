@@ -17,7 +17,7 @@ def generate_fake_landmark_data(num_rows=100, noise_level=0.5, label='control'):
         lo_y = lm_y
 
         # Right iris
-        rm_x = 150 + random.gauss(0, jitter)
+        rm_x = 110 + random.gauss(0, jitter)
         rm_y = 100 + random.gauss(0, jitter)
         ri_x = rm_x - 5 + random.gauss(0, 0.1)
         ri_y = rm_y
