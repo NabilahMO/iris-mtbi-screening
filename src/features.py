@@ -36,8 +36,8 @@ def compute_average_diameter(left_inner, left_outer, right_inner, right_outer):
 
 def normalise_distance(inter_iris_distance, avg_diameter):
     """Returns a normalised version of the inter-iris distance."""
-    if avg_diameter == 0:
-        return np.nan  # or raise an exception
+    if avg_diameter == 0 or avg_diameter is None:
+        return None  # or np.nan
     return inter_iris_distance / avg_diameter
 
 
