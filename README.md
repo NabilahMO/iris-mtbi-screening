@@ -1,22 +1,15 @@
-# Iris-mTBI Screening
-This biomedical tool simulates and analyses eye-tracking data to detect signs of mild traumatic brain injury (mTBI), based on variability in inter-iris distance over time.
+# Iris-mTBI Screening Tool
 
-Subtle changes in pupil stability can be early signs of concussion. This tool simulates and tests a computational approach for low-cost, fast detection using only eye-tracking data. In athlete safety, military screening, and digital health, this type of tool is key.
+A biomedical tool that simulates and analyses eye-tracking data to detect signs of mild traumatic brain injury (mTBI), based on variability in the inter-iris distance over time.
+
+Subtle changes in pupil stability can be early indicators of concussion. This tool simulates a computational approach for low-cost, rapid detection using only eye-tracking data—a concept with major implications for athlete safety, military screening, and digital health.
 
 ## What This Project Does
-1. Generate fake, raw pupil data (6 anatomical iris landmarks) for testing
-2. Calculates normalised inter-iris distance at each frame
-3. Measures variability (standard deviation) of that signal
-4. Flags possible mTBI using a decision threshold
 
-## Project Structure
-1. ``` src ```                  (Custom Python functions (features + data generation))
-2. ``` notebooks```            (Jupyter notebook for full pipeline)
-3. ```data/raw```        (Simulated eye-tracking data (control sample)
-4. ```requirements.txt  ```   (Python dependencies)
+1.  **Simulates** eye-tracking data for two groups: a healthy control group and a group with simulated mTBI characteristics.
+2.  **Calculates** the normalised inter-iris distance for each frame of the simulated data.
+3.  **Measures** the variability (standard deviation) of this signal over time.
+4.  **Flags** possible mTBI using a decision threshold based on the calculated variability.
+5.  **Visualizes** the distributions of the two samples to highlight the difference in signal variability.
 
-
-## Example Output
-Standard deviation: 0.0342
-No mTBI detected
-
+Built by: Nabilah Muri-Okunola
